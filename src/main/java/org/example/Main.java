@@ -21,14 +21,16 @@ public class Main {
                     mostrarEstado();
                     break;
                 case 2:
-
                     if (saciedad < 10) {
                         saciedad = Math.min(10, saciedad + 5);
                         diversion--;
+
+                        System.out.println("Ñam ñam! Saciedad: " + saciedad + " | Diversión: " + diversion);
                     } else {
                         System.out.println("No tengo hambre");
                     }
                     break;
+
 
 
                 case 3:
