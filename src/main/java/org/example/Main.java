@@ -33,7 +33,7 @@ public class Main {
 
                 case 3:
                     if (diversion < 10) {
-                        diversion = Math.min(10, diversion + 3);
+                        diversion = Math.min(10, diversion + 2);
                         saciedad--;
                         energia--;
                         mostrarEstado();
