@@ -22,10 +22,10 @@ public class Main {
                     break;
                 case 2:
                     if (saciedad < 10) {
-                        saciedad = Math.min(10, saciedad + 5);
+                        saciedad = Math.min(10, saciedad + 3);
                         diversion--;
+                        mostrarEstado();
 
-                        System.out.println("Ñam ñam! Saciedad: " + saciedad + " | Diversión: " + diversion);
                     } else {
                         System.out.println("No tengo hambre");
                     }
