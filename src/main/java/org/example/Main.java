@@ -20,10 +20,31 @@ public class Main {
                 case 1:
                     mostrarEstado();
                     break;
+                case 2:
+
+                    if (saciedad < 10) {
+                        saciedad = Math.min(10, saciedad + 5);
+                        diversion--;
+                    } else {
+                        System.out.println("No tengo hambre");
+                    }
+                    break;
+
+
+                case 3:
+                    // Jugar (más adelante)
+                    break;
+                case 4:
+                    // Dormir (más adelante)
+                    break;
+                case 0:
+                    System.out.println("Saliendo...");
+                    break;
             }
 
         } while (opcion != 0);
     }
+
 
 
 
