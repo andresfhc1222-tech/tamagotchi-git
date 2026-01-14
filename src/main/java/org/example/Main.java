@@ -43,8 +43,16 @@ public class Main {
                     break;
 
                 case 4:
-                    // Dormir (más adelante)
+                    if (energia < 10) {
+                        energia = Math.min(10, energia + 3);
+                        saciedad -= 3;
+                        diversion -= 2;
+                        mostrarEstado();
+                    } else {
+                        System.out.println("No tengo sueño");
+                    }
                     break;
+
                 case 0:
                     System.out.println("Saliendo...");
                     break;
