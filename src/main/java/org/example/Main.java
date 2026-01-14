@@ -31,11 +31,17 @@ public class Main {
                     }
                     break;
 
-
-
                 case 3:
-                    // Jugar (más adelante)
+                    if (diversion < 10) {
+                        diversion = Math.min(10, diversion + 3);
+                        saciedad--;
+                        energia--;
+                        mostrarEstado();
+                    } else {
+                        System.out.println("Ahora no me apetece jugar");
+                    }
                     break;
+
                 case 4:
                     // Dormir (más adelante)
                     break;
