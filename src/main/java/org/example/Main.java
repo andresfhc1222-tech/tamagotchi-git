@@ -44,6 +44,7 @@ public class Main {
 
                 case 4:
                     if (energia < 10) {
+
                         energia = Math.min(10, energia + 3);
                         saciedad -= 3;
                         diversion -= 2;
