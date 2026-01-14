@@ -10,8 +10,21 @@ public class Main {
 
 
     public static void main(String[] args) {
-        int opcion = menuPrincipal();
+
+        int opcion;
+
+        do {
+            opcion = menuPrincipal();
+
+            switch (opcion) {
+                case 1:
+                    mostrarEstado();
+                    break;
+            }
+
+        } while (opcion != 0);
     }
+
 
 
     private static int menuPrincipal() {
